@@ -1,0 +1,35 @@
+.MovieContext{
+    position: relative;
+    top: 10vh;
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    color: white;
+    background: linear-gradient(135deg, #000000, #3b3b3b, #626262);
+}
+
+.curMovieTitle{
+    position: absolute;
+}
+
+.MovieContext_Container{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+}
+
+.MovieContext_Bar{
+    position: relative;
+    top: -32px;
+    background-color: rgba(70, 69, 69, 0.692);
+    justify-content: space-between;
+}
+
+.MovieContext_Bar, .MovieContext_Bar_Left, .MovieContext_Bar_Right{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.MovieContext_Bar_Left div, .MovieContext_Bar_Right div{
+    padding: 5px 5px;
+}

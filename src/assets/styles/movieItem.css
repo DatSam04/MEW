@@ -1,0 +1,50 @@
+.movieItem{
+    text-align: center;
+    border: 1px solid #716e6e;
+    padding: 5px;
+}
+
+.movieItemBackground{
+    width: 246px;
+    height: 348px;
+}
+
+.movieItemInfo{
+    display: flex;
+    flex-direction: column;
+}
+.playBtnIcon{
+    color: black;
+}
+
+.movieItemBtn{
+    display: inline;
+    float: left;
+    margin-left: 8px;
+    padding: 8px 12px;
+    border: 1px solid rgb(167, 165, 165);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.movieItemBtn:hover {
+    background-color: #c2c2c2; /* Slight background change on hover */
+    transform: scale(1.1); /* Enlarges the button slightly on hover */
+}
+
+.moviePlayBtn{
+    background-color: white;
+}
+
+
+.moreInfoBtn{
+    float: right;
+    margin-right: 10px;
+}
+
+.movieItemGenres{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}

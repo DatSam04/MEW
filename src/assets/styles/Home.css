@@ -1,0 +1,43 @@
+.HomePage{
+    position: relative;
+    color: white;
+    background: linear-gradient(135deg, #000000, #3b3b3b, #626262);
+    width: 100vw;
+    min-height: 200vh;
+    transition: filter 0.3s ease-in-out;
+}
+
+.movieItemList{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 40px;
+    padding: 20px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Blur effect for movieItem */
+.blurred {
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.blurred::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent layer */
+    z-index: 1;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}

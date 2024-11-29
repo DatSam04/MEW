@@ -1,0 +1,129 @@
+.moreInfoSection {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 500px;
+    background-color: rgb(55, 54, 54);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 10;
+    pointer-events: auto;
+    overflow: scroll;
+}
+
+.infoHeadImg {
+    width: 100%;
+    max-height: 400px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.moreInfoSectionButton {
+    position: relative;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    top: -80px;
+}
+
+.movieinfoBtn {
+    position: relative;
+    left: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: rgb(55, 54, 54, 0.6);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.moveInfoPlayBtn{
+    background-color: white;
+    color: black;
+}
+
+.moveInfoPlayBtn:hover{
+    background-color: #ececec;
+    transform: scale(1.1);
+}
+
+.movieInfoFavBtn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.closeButton {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+    background-color: #555555;
+}
+
+.infoBody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    margin-left: 7%;
+}
+
+.infoBodyLeft, .infoBodyRight {
+    flex: 1;
+    min-width: 250px;
+    color: #ddd;
+}
+
+.infoBodyLeft .movieYear, .infoBodyLeft .movieSeason {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.infoBodyLeft .movieSeason{
+    position: relative;
+    top: -28px;
+    left: 60px;
+}
+
+.infoBodyLeft .movieDescription {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.infoBodyRight{
+    padding-left: 5%;
+}
+
+.infoBodyRight .movieCast, .infoBodyRight .movieGenres, .infoBodyRight .movieTypes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.infoBodyRightText{
+    color: #a0a0a0;
+}
